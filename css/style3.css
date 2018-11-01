@@ -1,0 +1,155 @@
+@font-face {
+	font-family: Digital-7 Mono; /* Имя шрифта */
+	src: url('../fonts/digital-7.ttf');		/* Путь к файлу со шрифтом */
+}
+
+@font-face {
+	font-family: Junegull; /* Имя шрифта */
+	src: url('../fonts/junegull.ttf');		/* Путь к файлу со шрифтом */
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.navbar-default{
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+}
+
+.navbar-collapse{
+	border-width: 2px;
+	border-color: #00fffb !important;
+	margin-top: 25px;
+}
+
+.navbar-toggle{
+	margin-top: 20px;
+}
+
+.navbar-nav {
+	float: left;
+}
+
+.calculator{
+	margin-top: 20px;
+	padding-bottom: 25px;
+	border: 5px solid #5CCCCC;
+	border-radius: 100px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.screen{
+	margin-top: 40px;
+	margin-bottom: 30px;
+	height: 75px;
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+	border: 3px solid #5CCCCC;
+	border-radius: 100px;
+	background: #383a3a;
+	outline: none;
+	font-size: 70px;
+	color: #fff;
+	font-family: 'Digital-7 Mono', arial;
+}
+
+.row-buttons{
+	margin-top: 20px;
+}
+
+.button{
+	height: 70px;
+	width: 100%;
+	background-color: rgba(92, 204, 204, 0.1);
+	color: #5CCCCC;
+	border-radius: 100px;
+	border-color: #5CCCCC;
+	font-size: 25px;
+	outline: none;
+}
+
+.button:hover{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 767px){
+	.button{
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 500px){
+	.screen{
+        height: 45px;
+		margin-bottom: 0;
+        font-size: 35px;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+	}
+	.row-buttons{
+		margin-top: 20px;
+	}
+	.calculator{
+	padding-bottom: 20px;
+	}
+    .button{
+        height: 50px;
+    }
+}
+
+body{
+	background: url(../img/voda.jpg) no-repeat center;
+	height: 100%;
+}
+
+.nav li a{
+	text-decoration: none;
+	color: #00fffb !important;
+	font-family: 'Junegull', arial;
+	font-size: 18px;
+	text-shadow: black 1px 1px 0, black -1px -1px 0, 
+                 black -1px 1px 0, black 1px -1px 0;
+}
+
+.nav li a:hover{
+	text-decoration: none;
+	background-color: rgba(0, 0, 0, 0);
+
+}
+
+.nav li:hover::after{
+	display: block;
+}
+
+.nav li{
+	position: relative;
+}
+
+.nav li::after{
+	content: "";
+	display: block;
+	position: absolute;
+	height: 3px;
+	background-color: #00fffb;
+	width: 100%;
+	display: none;
+}
+
+.navbar-toggle {
+	border-color: #00fffb !important;
+	border-width: 3px !important;
+}
+
+.icon-bar{
+	background-color: #00fffb !important;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+

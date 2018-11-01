@@ -1,0 +1,119 @@
+@font-face {
+	font-family: Digital-7 Mono; /* Имя шрифта */
+	src: url('../fonts/digital-7.ttf');		/* Путь к файлу со шрифтом */
+}
+
+@font-face {
+	font-family: Junegull; /* Имя шрифта */
+	src: url('../fonts/junegull.ttf');		/* Путь к файлу со шрифтом */
+}
+
+body{
+    background-color:#f8f8f8;
+}
+#section-one{
+    padding-top: 25px;
+}
+
+.navbar{
+    margin-bottom: 0;
+	padding-bottom: 15px;
+}
+
+.navbar-toggle{
+    margin-top: 15px;
+}
+
+.navbar-collapse{
+	margin-top: 25px;
+}
+
+.calculator{
+    padding-bottom: 40px;
+    background: #cdcdcd;
+    border: 25px double #fefefe;
+    border-radius: 25px;
+    box-shadow: 0 0 18px rgba(0,0,0,0.3);
+}
+
+.screen{
+    margin-top: 50px;
+    height: 85px;
+    border: 15px double #adadad;
+    border-radius: 10px;
+    background: #e2eed0;
+    font-size: 55px;
+    font-family: 'Digital-7 Mono', arial;
+    padding-right: 15px;
+    outline: none;
+}
+
+.buttons{
+    padding-top: 30px;
+}
+
+.row-buttons{
+    margin-top: 20px;
+}
+
+
+.button{
+    height: 100%;
+    width: 100%;
+    background: #adadad;
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: 'Arial';
+    color: white;
+    outline: none;
+    padding: 0;
+    font-weight: bold;
+    border-left-color : #222; 
+    border-bottom-color : #222; 
+    border-right-color : #fff; 
+    border-top-color : #fff; 
+}
+
+.button:focus {
+    border-left : 2px solid #fff;
+    border-bottom : 2px solid #fff;
+    border-right : 2px solid #222;
+    border-top : 2px solid #222;
+}
+
+.buttons button:hover{
+    background: #686869;
+    color: #e2eed0;
+}
+
+@media (max-width: 450px){
+    .screen{
+        margin-top: 30px;
+        height: 65px;
+        border: 10px double #adadad;
+        font-size: 30px;
+    }
+    .buttons {
+        padding-top: 15px;
+    }
+    .button{
+        font-size: 15px;
+    }
+    .calculator{
+        border: 10px double #fefefe;
+        border-radius: 10px;
+    }
+}
+
+.nav li a {
+    text-decoration: none;
+	font-family: 'Junegull', arial;
+	font-size: 18px;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 { 
+    position: relative; 
+    min-height: 1px; 
+    padding-right: 8px; 
+    padding-left: 8px; 
+}
